@@ -1,0 +1,27 @@
+<!--test/test1/test1.wxml-->
+<view>
+	<view class='menu'>
+		<view class='sort {{sortIdx == index ? "sort_on" : ""}}' wx:for='{{sortData}}' wx:for-item='sort' bindtap='switchSort' data-index='{{index}}'>
+			<text>{{sort.name}}</text>
+			<text class='sort_count {{sort.count ? "show" : "hide"}}'>{{sort.count}}</text>
+		</view>
+	</view>
+	<view class='pdts'>
+		<view class='sort_pdt {{sortIdx == sidx ? "show" : "hide"}}' wx:for='{{sortData}}' wx:for-item='sort' wx:for-index='sidx'>
+			<view class='pdt' wx:for='{{sort.product}}' wx:for-item='pdt' wx:for-index='pidx'>
+				<view class='main_info'>
+					<text>{{pdt.name}}</text>
+					<text class='red'>￥{{pdt.price}}</text>
+				</view>
+				<view class='action'>
+					<view class='sub {{pdt.count ? "show" : "hide"}}' bindtap='changeCount' data-type='-1' data-idx='{{sidx + "," + pidx}}'>-</view>
+					<text class='count {{pdt.count ? "show" : "hide"}}'>{{pdt.count}}</text>
+					<view class='add' bindtap='changeCount' data-type='1' data-idx='{{sidx + "," + pidx}}'>+</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class='amount_box'>
+		<view>共选择 <text class='red'>{{amount}}</text> 件商品，总金额：<text class='red'>{{payment}}</text> 元</view>
+	</view>
+</view>

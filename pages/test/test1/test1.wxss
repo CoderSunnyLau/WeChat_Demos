@@ -1,0 +1,99 @@
+/* test/test1/test1.wxss */
+page{
+	font-size: 28rpx;
+}
+.menu{
+	position: absolute;
+	height: 100%;
+	width: 150rpx;
+	left: 0;
+	top: 0;
+	background-color: #EEE;
+}
+.sort{
+	border-bottom: 2rpx solid #CCC;
+	line-height: 80rpx;
+	text-align: center;
+	position: relative;
+}
+.sort_count{
+	position: absolute;
+	top: 20rpx;
+	right: -20rpx;
+	width: 40rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	background-color: #D33;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFF;
+}
+.sort_on{
+	background-color: #FFF;
+	border-color: #FFF;
+}
+.pdts{
+	position: fixed;
+	width: 560rpx;
+	height: 100%;
+	right: 0;
+	top: 0;
+	padding: 20rpx;
+}
+.show{
+	display: block !important;
+}
+.hide{
+	display: none !important;
+}
+.pdt{
+	height: 120rpx;
+	width: 90%;
+	margin: 0 auto;
+	border-top: 1px solid #EEE;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main_info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.action{
+	display: flex;
+	justify-content: flex-end;
+}
+.add, .sub{
+	width: 40rpx;
+	height: 40rpx;
+	line-height: 38rpx;
+	background-color: #999;
+	border-radius: 50%;
+	margin: 0 10rpx;
+	text-align: center;
+	color: #FFF;
+	font-size: 40rpx;
+	font-weight: 600;
+}
+.red{
+	color: #D33;
+	font-size: 30rpx;
+}
+.count{
+	display: block;
+	width: 80rpx;
+	line-height: 40rpx;
+	text-align: center;
+}
+.amount_box{
+	width: 100%;
+	height: 100rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #FFF;
+	border-top: 2rpx solid #DDD;
+	line-height: 100rpx;
+	text-indent: 20rpx;
+}
